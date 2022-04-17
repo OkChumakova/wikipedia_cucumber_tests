@@ -6,7 +6,7 @@ Feature: UI testing of Wikipedia homepage
     Then It should be present on the page containing following <textValue>
     Examples:
       | page                                      | elementXpath                        | textValue        |
-      | "https://en.wikipedia.org/wiki/Main_Page" | "//span[text()='Log in']"           | "Should Fail"         |
+      | "https://en.wikipedia.org/wiki/Main_Page" | "//span[text()='Log in']"           | "Should Fail"    |
       | "https://en.wikipedia.org/wiki/Main_Page" | "//li[@id='footer-places-privacy']" | "Privacy policy" |
 
 
