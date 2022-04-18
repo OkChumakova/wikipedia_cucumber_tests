@@ -41,7 +41,7 @@ public class HomePageStepDefinitions extends BaseClass {
 
     @Then("I observe that static text denoting block with languages is displayed as {string}")
     public void iObserveThatStaticTextDenotingBlockWithLanguagesIsDisplayedAs(String textValue) {
-        String textExtracted = homePage.getStaticHeaderTextForLanguagesList().getText();
+        String textExtracted = homePage.getStaticHeaderTextForLanguagesList();
         Assert.assertEquals(textExtracted, textValue);
     }
 }

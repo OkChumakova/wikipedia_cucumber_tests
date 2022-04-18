@@ -16,7 +16,7 @@ public class HomePage {
     @FindBy(css = "#p-lang span.vector-menu-heading-label")
     private WebElement staticHeaderTextForLanguagesList;
 
-    public WebElement getStaticHeaderTextForLanguagesList() {
-        return staticHeaderTextForLanguagesList;
+    public String getStaticHeaderTextForLanguagesList() {
+        return staticHeaderTextForLanguagesList.getText();
     }
 }
