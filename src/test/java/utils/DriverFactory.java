@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
+
 public class DriverFactory {
     public static WebDriver createDriver(Browser browser) {
         WebDriver driver = null;
@@ -22,6 +24,7 @@ public class DriverFactory {
                 driver =  WebDriverManager.edgedriver().create();
                 break;
         }
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
         return driver;
     }

@@ -15,10 +15,10 @@ Feature: UI testing of Wikipedia homepage
     When I switch language to <language>
     Then I observe that static text denoting block with languages is displayed as <translatedTitle>
     Examples:
-      | page                                      | language  | translatedTitle       |
-      | "https://en.wikipedia.org/wiki/Main_Page" | "Deutsch" | "In anderen Sprachen" |
-      | "https://en.wikipedia.org/wiki/Main_Page" | "Čeština" | "V jiných jazycích"   |
-      | "https://en.wikipedia.org/wiki/Main_Page" | "Español" | "En otros idiomas"    |
+      | page                                      | language   | translatedTitle     |
+      | "https://en.wikipedia.org/wiki/Main_Page" | "Italiano" | "In altre lingue"   |
+      | "https://en.wikipedia.org/wiki/Main_Page" | "Hrvatski" | "Drugi jezici"      |
+      | "https://en.wikipedia.org/wiki/Main_Page" | "Polski"   | "W innych językach" |
 
 
 
